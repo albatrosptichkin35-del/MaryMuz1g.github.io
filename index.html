@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work Page</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #121212; 
+            color: #fff; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #1e1e1e;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #333;
+        }
+        header h1 { font-size: 1.5rem; letter-spacing: 1px; }
+        nav a {
+            color: #bbb;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+        }
+        nav a:hover { color: #1db954; }
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .hero h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .hero p { color: #aaa; max-width: 600px; margin: 0 auto; }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            background: #1e1e1e;
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .project-card:hover { border-color: #1db954; }
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            background: #333;
+        }
+        .project-card h3 { margin: 0.75rem 0 0.25rem; font-size: 1.1rem; }
+        .project-card p { color: #999; font-size: 0.85rem; }
+        footer {
+            background: #0a0a0a;
+            text-align: center;
+            padding: 1rem;
+            color: #555;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎵 My Work</h1>
+        <nav>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Your Personal Work Page</h2>
+            <p>A minimal, dark‑themed portfolio inspired by music platforms. Replace the placeholder images and text with your own work.</p>
+        </section>
+        <section class="projects">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x180/333/555?text=Project+1" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Short description of the work you’ve done.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x180/333/555?text=Project+2" alt="Project 2">
+                <h3>Another Project</h3>
+                <p>Add your own details here.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x180/333/555?text=Project+3" alt="Project 3">
+                <h3>Yet Another</h3>
+                <p>Customise the grid to show your portfolio.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2026 Your Name — Made with care
+    </footer>
+</body>
+</html>
